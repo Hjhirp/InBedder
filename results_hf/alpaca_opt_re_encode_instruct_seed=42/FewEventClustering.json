@@ -1,0 +1,10 @@
+{
+  "dataset_revision": "aecc9c3ad7ae8d05b8621390d1919f1816eab777",
+  "mteb_dataset_name": "FewEventClustering",
+  "mteb_version": "1.1.2.dev0",
+  "test": {
+    "evaluation_time": 0.04,
+    "v_measure": 0.3547716058959224,
+    "v_measure_std": 0.0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "dataset_revision": "365ef3e171ad4dab887b08495b10940a1aecb04b",
+  "mteb_dataset_name": "FeedbacksClustering",
+  "mteb_version": "1.1.2.dev0",
+  "test": {
+    "evaluation_time": 6.09,
+    "v_measure": 0.018882974538055288,
+    "v_measure_std": 0.0
+  }
+}

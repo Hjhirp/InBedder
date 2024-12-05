@@ -1,0 +1,10 @@
+{
+  "dataset_revision": "9dff096e4ca4dd38688236fa1d4e4c17cb547e66",
+  "mteb_dataset_name": "FewNerdClustering",
+  "mteb_version": "1.1.2.dev0",
+  "test": {
+    "evaluation_time": 0.13,
+    "v_measure": 0.5437839484566434,
+    "v_measure_std": 0.0
+  }
+}

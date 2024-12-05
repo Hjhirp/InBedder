@@ -3,7 +3,7 @@
     "model_path": "BrandonZYW/opt-1.3b-InBedder",
     "model_id": "opt-1.3b-qa-ml=20",
     "reencoder": "average_word_embeddings_komninos",
-    "max_input_length": 512,
+    "max_input_length": 256,
     "dtype": "float32",
     "seed": 42,
     "use_flash_attention_2": false,
@@ -12,7 +12,7 @@
         "max_new_tokens": 20,
         "do_sample": false
     },
-    "batch_size": 64,
+    "batch_size": 16,
     "disable_instruction": false,
     "pattern": "### Input:\n{input}\n\n### Instruction:\n{instruction}\n\n### Response:"
 }

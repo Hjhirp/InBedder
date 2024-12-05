@@ -3,7 +3,7 @@
     "model_type": "seq2seq",
     "model_id": "flan-t5-xl-e5-large-v2-pretrain-ml=40",
     "reencoder": "intfloat/e5-large-v2",
-    "max_input_length": 512,
+    "max_input_length": 256,
     "dtype": "float32",
     "seed": 42,
     "generation_configs": {
@@ -11,7 +11,7 @@
         "max_new_tokens": 20,
         "do_sample": false
     },
-    "batch_size": 128,
+    "batch_size": 64,
     "disable_instruction": false,
     "pattern": "### Input:\n{input}\n\n### Instruction:\n{instruction}\n\n### Response:"
 }

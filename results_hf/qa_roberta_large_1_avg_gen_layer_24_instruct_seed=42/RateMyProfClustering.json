@@ -1,0 +1,10 @@
+{
+  "dataset_revision": "253b8501d191f7c3d3aff3bc27c6d7f7112589ba",
+  "mteb_dataset_name": "RateMyProfClustering",
+  "mteb_version": "1.1.2.dev0",
+  "test": {
+    "evaluation_time": 5.96,
+    "v_measure": 0.05225650810821285,
+    "v_measure_std": 0.0
+  }
+}

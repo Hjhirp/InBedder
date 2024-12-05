@@ -1,0 +1,10 @@
+{
+  "dataset_revision": "462fb544c8993a0421fd969a7a0f19f1fbd975bf",
+  "mteb_dataset_name": "NYTLocationClustering",
+  "mteb_version": "1.1.2.dev0",
+  "test": {
+    "evaluation_time": 0.04,
+    "v_measure": 0.2963811083128962,
+    "v_measure_std": 0.0
+  }
+}

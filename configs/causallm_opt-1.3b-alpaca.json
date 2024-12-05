@@ -1,10 +1,10 @@
 {
     "model_type": "causal",
-    "model_path": "alpaca_train/checkpoints/alpaca_opt-1.3b",
-    "model_id": "opt-1.3b-alpaca-ml=20",
+    "model_path": "HarshalH/alpaca_opt",
+    "model_id": "alpaca_opt",
     "reencoder": "average_word_embeddings_komninos",
     "truncate_to_length": 400,
-    "max_input_length": 512,
+    "max_input_length": 256,
     "dtype": "float32",
     "seed": 42,
     "use_flash_attention_2": false,
@@ -13,7 +13,7 @@
         "max_new_tokens": 20,
         "do_sample": false
     },
-    "batch_size": 64,
+    "batch_size": 16,
     "disable_instruction": false,
     "pattern": "### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response:"
 }

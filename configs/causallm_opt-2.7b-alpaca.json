@@ -3,7 +3,7 @@
     "model_path": "alpaca_train/checkpoints/alpaca_opt-2.7b",
     "model_id": "opt-2.7b-alpaca-ml=20",
     "reencoder": "average_word_embeddings_komninos",
-    "max_input_length": 512,
+    "max_input_length": 256,
     "dtype": "float32",
     "seed": 42,
     "use_flash_attention_2": false,
@@ -12,7 +12,7 @@
         "max_new_tokens": 20,
         "do_sample": false
     },
-    "batch_size": 32,
+    "batch_size": 16,
     "disable_instruction": false,
     "pattern": "### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response:"
 }
