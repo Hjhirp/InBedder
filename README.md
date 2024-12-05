@@ -1,3 +1,69 @@
+# CS 421 Reproducibility Instructions:
+
+## Training Dataset
+
+Training dataset for Question-Answering task (QA) is provided directly by the authors in their code. However, for alpaca training the dataset needs to be cloned from stanford-alpaca github repository [here](https://github.com/tatsu-lab/stanford_alpaca/tree/main).
+
+## Model Training
+
+1. For Roberta-350m-alpaca:
+
+First comment the QA section and uncomment the alpaca section in train.sh provided in alpaca_train.
+Then modify the name of the model in train.py as following:
+```
+for model_name_or_path in "roberta-large"
+```
+then modify the path to dataset as follows:
+```
+--data_path = ./stanford_alpaca/alpaca_data.json
+```
+finally run following code in the terminal. 
+```bash
+cd alpaca_train
+bash scripts/train.sh
+```
+If the run fails modify the batch_size and gradient_accumulation_steps in the else loop of train.sh
+
+2. For Roberta-350m-QA:
+First uncomment the QA section and comment the alpaca section in train.sh provided in alpaca_train.
+Then modify the name of the model in train.py as following:
+```
+for model_name_or_path in "roberta-large"
+```
+then run following code in the terminal. 
+```bash
+cd alpaca_train
+bash scripts/train.sh
+```
+If the run fails modify the batch_size and gradient_accumulation_steps in the else loop of train.sh
+
+3. for opt-350m-alpaca:
+First comment the QA section and uncomment the alpaca section in train.sh provided in alpaca_train.
+Then modify the name of the model in train.py as following:
+```
+for model_name_or_path in "facebook/opt-350m"
+```
+then modify the path to dataset as follows:
+```
+--data_path = ./stanford_alpaca/alpaca_data.json
+```
+finally run following code in the terminal. 
+```bash
+cd alpaca_train
+bash scripts/train.sh
+```
+If the run fails modify the batch_size and gradient_accumulation_steps in the else loop of train.sh
+
+## Model Testing
+
+The evaluation code is contained in `evaluation.py`. To execute evaluation and reproduce results in the paper, use `scripts/evaluation.sh`. Simply select one line to uncomment and fill in the cuda device id, and then run
+```bash
+bash scripts/evaluation.sh
+```
+
+Model Results will be generated in results_hf folder.
+
+
 # [ACL2024] 🛌InBedder: Instruction-following Text Embedder
 
 This repository contains the code, dataset and pre-trained models for our paper [Answer is All You Need: Instruction-following Text Embedding via Answering the Question](https://arxiv.org/abs/2402.09642).
