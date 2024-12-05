@@ -64,6 +64,8 @@ bash scripts/evaluation.sh
 Model Results will be generated in results_hf folder.
 
 
+**************************** **Original ReadMe** ****************************
+
 # [ACL2024] 🛌InBedder: Instruction-following Text Embedder
 
 This repository contains the code, dataset and pre-trained models for our paper [Answer is All You Need: Instruction-following Text Embedding via Answering the Question](https://arxiv.org/abs/2402.09642).
