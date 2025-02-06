@@ -1,4 +1,5 @@
 # CS 421 Reproducibility Instructions:
+![Example Image]((https://raw.githubusercontent.com/Hjhirp/InBedder/refs/heads/main/intro.png))
 
 ## Training Dataset
 
@@ -63,6 +64,8 @@ bash scripts/evaluation.sh
 
 Model Results will be generated in results_hf folder.
 
+![Example Image]((https://raw.githubusercontent.com/Hjhirp/InBedder/refs/heads/main/inst-awr.png))
+![Example Image](https://raw.githubusercontent.com/Hjhirp/InBedder/refs/heads/main/sent-emb.png)
 
 **************************** **Original ReadMe** ****************************
 
